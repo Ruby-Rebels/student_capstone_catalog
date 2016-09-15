@@ -1,0 +1,9 @@
+<h3>This is the index</h3>
+
+<%= @students.each do |student| %>
+  <div class = "col-sm-4 col-sm-offset-2">
+    <h2><%= student.name %></h2>
+    <h3><%= student.capstone.name %></h3>
+    <h4><%= student.capstone.screenshot %></h4>
+  </div>
+<% end %>
