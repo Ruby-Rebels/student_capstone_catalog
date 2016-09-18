@@ -5,6 +5,7 @@
     <h2><%= student.name %></h2>
     <h3><%= student.capstone.name %></h3>
     <h4><%= student.capstone.screenshot %></h4>
+    <%= link_to "View more", "/students/{@student.id}" %>
   </div>
     <%= link_to "View More", "/students/#{student.id}", class: "btn btn-success" %>
 <% end %>
