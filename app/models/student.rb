@@ -11,7 +11,7 @@ class Student
     ).body
     @students = []
       all_student.each do |student|
-        @students << Game.new(student)
+        @students << Student.new(student)
       end
     @students
   end
